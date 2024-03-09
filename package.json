@@ -1,0 +1,15 @@
+﻿{
+  "name": "com.admt.raycast-detectable",
+  "displayName": "RaycastDetectable",
+  "version": "0.0.1",
+  "unity": "2021.2",
+  "unityRelease": "7f1",
+  "keywords": [
+    "raycast",
+    "detectable"
+  ],
+  "repository": {
+    "url": "git@bitbucket.org:reposlav/raycastdetectable.git",
+    "type": "git"
+  }
+}
