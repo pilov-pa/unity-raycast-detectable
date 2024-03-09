@@ -1,9 +1,9 @@
 ﻿{
   "name": "com.admt.raycast-detectable",
   "displayName": "RaycastDetectable",
-  "version": "0.0.1",
-  "unity": "2021.2",
-  "unityRelease": "7f1",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "unityRelease": "20f1",
   "keywords": [
     "raycast",
     "detectable"

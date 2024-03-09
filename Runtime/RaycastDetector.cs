@@ -7,15 +7,15 @@ namespace Pilov.RaycastDetectable
     {
         [SerializeField] private LayerMask layerMask;
         [SerializeField] private float maxDistance = 3;
-        [SerializeField] private Camera camera;
+        [SerializeField] private Camera detectorCamera;
         private ReactiveProperty<GameObject> _detectedObject = new();
         public ReadOnlyReactiveProperty<GameObject> DetectedObject => _detectedObject;
 
         private void Awake()
         {
-            if (camera == null)
+            if (detectorCamera == null)
             {
-                camera = Camera.main;
+                detectorCamera = Camera.main;
             }
         }
 
@@ -26,7 +26,7 @@ namespace Pilov.RaycastDetectable
 
         private void Detect(Vector2 screenCoords)
         {
-            Ray ray = camera.ScreenPointToRay(screenCoords);
+            Ray ray = detectorCamera.ScreenPointToRay(screenCoords);
             if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, layerMask))
             {
                 var raycastDetectables = hit.collider.GetComponents<IRaycastDetectable>();
