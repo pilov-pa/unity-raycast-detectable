@@ -1,5 +1,5 @@
 ﻿{
-  "name": "com.admt.raycast-detectable",
+  "name": "com.pilov.raycast-detectable",
   "displayName": "RaycastDetectable",
   "version": "1.0.0",
   "unity": "2022.3",
@@ -9,7 +9,7 @@
     "detectable"
   ],
   "repository": {
-    "url": "git@bitbucket.org:reposlav/raycastdetectable.git",
+    "url": "git@github.com:pilov-pa/unity-raycast-detectable.git",
     "type": "git"
   }
 }
