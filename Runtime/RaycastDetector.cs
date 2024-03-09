@@ -40,11 +40,14 @@ namespace Pilov.RaycastDetectable
                     _detectedObject.Value = null;
                 }
                 
-                foreach (var raycastDetectable in raycastDetectables)
+				if (hit.transform.gameObject != _detectedObject.Value)
                 {
-                    raycastDetectable.OnDetect();
-                }
-                _detectedObject.Value = hit.transform.gameObject;
+	                foreach (var raycastDetectable in raycastDetectables)
+	                {
+	                    raycastDetectable.OnDetect();
+ 	               }
+  	               _detectedObject.Value = hit.transform.gameObject;
+				}
                 return;
             }
 
